@@ -1,0 +1,216 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ body {
+     background: #e7eafb;
+     padding: 70px;
+ }
+
+ .job-item {
+     background: #fff;
+     box-shadow: 0 21px 87px -35px rgba(#5062d3, .5);
+     border-radius: 20px;
+ }
+ .job-item  a {
+    padding: 50px 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.job-item a .title {
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: #111127;
+    font-weight: bold;
+}
+.alt-title {
+    color: rgba(#111127, .7);
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.job-item a p {
+    font-size: 18px;
+    color: #111127;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tags span {
+    padding: 7px 20px;
+    background: #e7eafb;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #111127;
+    margin: 0 10px 10px 0;
+}
+.job-items {
+    display: flex;
+    flex-direction: column;
+}
+.job-items li {
+    margin-bottom: 15px;
+}
+.job-items li a {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    align-items: center;
+    padding: 20px 45px 20px 20px;
+    transition: 300ms transform;
+}
+.job-items li a:hover {
+    transform: scale(1.03);
+}
+.avatar {
+    min-width: 64px;
+    margin-right: 15px;
+    height: 64px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    border: 2px solid #e7eafb;
+}
+.detail {
+    display: flex;
+    flex-direction: column;
+}
+.detail .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #111127;
+    margin-bottom: 9px;
+}
+.detail .position { 
+    font-size: 16px;
+    color: rgba(#111127, .7);
+}
+.location {
+    opacity: .6;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #111127;
+}
+.job-items li a img {
+    margin-right: 5px;
+}
+.job-filter {
+    width: 300px;
+    border-radius: 20px;
+    background: #fff;
+    padding: 30;
+}
+.job-filter form {
+    height: 100%;
+}
+.job-filter .search {
+    height: 76px;
+    margin: 0 -30px;
+    border-bottom: 1px solid #e7eafb;
+    padding: 0 30px;
+    margin-bottom: 30px; 
+}
+.job-filter input {
+    height: 46px;
+    line-height: 106px;
+    font-size: 16px;
+    padding-left: 45px;
+}
+.job-filter input::placeholder {
+    color: rgba(#2f2f7e, .7);
+}
+.job-filter h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111127;
+    margin-bottom: 15px;
+}
+.job-filter .checkbox-list {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.job-filter li {
+    margin-bottom: 20px;
+}
+.job-filter li:last-child {
+    margin-bottom: 0;
+}
+.job-filter li label {
+    display: flex;
+    cursor: pointer;
+}
+.checkbox {
+    width: 27px;
+    height: 27px;
+    border: 1px solid #e7eafb;
+    border-radius: 5px;
+    background: #fff;
+    min-width: 27px;
+    transition: 300ms background, 300ms border-color;
+    margin-right: 15px;
+}
+
+.job-filter li label .text {
+    font-size: 16px;
+    color: #111127;
+}
+.job-filter li label input {
+    display: none;
+}
+.job-filter li label input:checked + .checkbox {
+    background: #8a9cff url(../img/check.svg) no-repeat center;
+    border-color: #8a9cff;
+}
+.job-filter .filter-form li {
+    margin-bottom: 20px;
+}
+.job-filter .filter-form li button {
+    width: 100%;
+    height: 57px;
+    background: #8a9cff;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 11px 30px -15px #6778e1;
+}
+.job-filter .filter-form li label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #111127;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+ select {
+    appearance: none;
+    height: 46px;
+    border: 2px solid #e7eafb;
+    border-radius: 8px;
+    background: #ffffff url(../img/check.svg) no-repeat calc(100% - 15px);
+    width: 100%;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: 300ms border-color;
+}
+select:hover {
+    border-color: darken(#e7eafb, 3%);
+}
+select:focus {
+    border-color: #8a9cff;
+}
